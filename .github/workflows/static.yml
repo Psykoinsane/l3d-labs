@@ -23,10 +23,8 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install dependencies
-        run: |
-          npm install
-          npm install @vitejs/plugin-react --save-dev
+      - name: - name: Install dependencies
+        run: npm install --legacy-peer-deps
 
       - name: Build
         run: node ./node_modules/vite/bin/vite.js build

@@ -38,7 +38,7 @@ export default function Footer() {
                 <i className="ri-linkedin-fill text-[#FFD700] group-hover:text-black text-xl"></i>
               </a>
               <a
-                href="https://www.instagram.com/l3d_laboratorio3d/"
+                href="https://www.instagram.com/l3d_laboratorio3d?igsh=MTAzbGVvdW9oanZ3cw=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center bg-[#1A1A1A] rounded-lg hover:bg-[#FFD700] transition-colors group cursor-pointer"

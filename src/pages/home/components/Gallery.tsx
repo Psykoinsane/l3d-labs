@@ -5,43 +5,43 @@ export default function Gallery() {
 
   const valentinesImages = [
     {
-      url: '/public/images/DN/1.png',
+      url: '/images/DN/1.png',
     },
     {
-      url: '/public/images/DN/2.png',
+      url: '/images/DN/2.png',
     },
     {
-      url: '/public/images/DN/3.png',
+      url: '/images/DN/3.png',
     },
     {
-      url: '/public/images/DN/4.png',
+      url: '/images/DN/4.png',
     },
     {
-      url: '/public/images/DN/5.png',
+      url: 'images/DN/5.png',
     },
     {
-      url: '/public/images/DN/6.png',
+      url: 'images/DN/6.png',
     },
     {
-      url: '/public/images/DN/7.png',
+      url: 'images/DN/7.png',
     },
     {
-      url: '/public/images/DN/8.png',
+      url: 'images/DN/8.png',
     },
     {
-      url: '/public/images/DN/9.png',
+      url: '/images/DN/9.png',
     },
     {
-      url: '/public/images/DN/11.png',
+      url: '/images/DN/11.png',
     },
     {
-      url: '/public/images/DN/12.png',
+      url: '/images/DN/12.png',
     },
     {
-      url: '/public/images/DN/13.png',
+      url: '/images/DN/13.png',
     },
     {
-      url: '/public/images/DN/14.png',
+      url: '/images/DN/14.png',
     },
   ];
 

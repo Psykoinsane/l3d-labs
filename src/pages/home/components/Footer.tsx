@@ -30,7 +30,7 @@ export default function Footer() {
                 <i className="ri-facebook-fill text-[#FFD700] group-hover:text-black text-xl"></i>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/l3d-laborat%C3%B3rio-3d/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center bg-[#1A1A1A] rounded-lg hover:bg-[#FFD700] transition-colors group cursor-pointer"
@@ -46,7 +46,7 @@ export default function Footer() {
                 <i className="ri-instagram-fill text-[#FFD700] group-hover:text-black text-xl"></i>
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/@L3D_Laboratorio3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center bg-[#1A1A1A] rounded-lg hover:bg-[#FFD700] transition-colors group cursor-pointer"
@@ -101,7 +101,7 @@ export default function Footer() {
             <ul className="space-y-3 text-[#C0C0C0] text-sm">
               <li className="flex items-center gap-2">
                 <i className="ri-mail-line text-[#FFD700]"></i>
-                <span>l3d.campfire063@passmail.net</span>
+                <span>geral@l3d-labs.pt</span>
               </li>
             </ul>
           </div>

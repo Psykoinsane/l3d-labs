@@ -5,16 +5,43 @@ export default function Gallery() {
 
   const valentinesImages = [
     {
-      url: 'https://readdy.ai/api/search-image?query=3d-printed-romantic-heart-sculpture-red-color-valentines-day-gift-love-symbol-on-soft-pink-background-elegant-romantic-atmosphere-professional-product-photography-minimal-style&width=400&height=400&seq=valentines-001&orientation=squarish',
+      url: '/public/images/DN/1.png',
     },
     {
-      url: 'https://readdy.ai/api/search-image?query=3d-printed-couple-figurine-romantic-gift-valentines-day-two-hearts-intertwined-red-and-pink-tones-soft-background-love-decoration-professional-shot&width=400&height=400&seq=valentines-002&orientation=squarish',
+      url: '/public/images/DN/2.png',
     },
     {
-      url: 'https://readdy.ai/api/search-image?query=3d-printed-rose-flower-sculpture-red-romantic-valentines-gift-elegant-design-soft-pink-background-love-symbol-professional-product-photography&width=400&height=400&seq=valentines-003&orientation=squarish',
+      url: '/public/images/DN/3.png',
     },
     {
-      url: 'https://readdy.ai/api/search-image?query=3d-printed-love-text-sculpture-romantic-valentines-day-decoration-red-hearts-soft-background-personalized-gift-professional-photography-minimal&width=400&height=400&seq=valentines-004&orientation=squarish',
+      url: '/public/images/DN/4.png',
+    },
+    {
+      url: '/public/images/DN/5.png',
+    },
+    {
+      url: '/public/images/DN/6.png',
+    },
+    {
+      url: '/public/images/DN/7.png',
+    },
+    {
+      url: '/public/images/DN/8.png',
+    },
+    {
+      url: '/public/images/DN/9.png',
+    },
+    {
+      url: '/public/images/DN/11.png',
+    },
+    {
+      url: '/public/images/DN/12.png',
+    },
+    {
+      url: '/public/images/DN/13.png',
+    },
+    {
+      url: '/public/images/DN/14.png',
     },
   ];
 

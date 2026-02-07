@@ -93,7 +93,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-white text-lg font-semibold">Email</div>
-                  <div className="text-[#B0B0B0]">l3d.campfire063@passmail.net</div>
+                  <div className="text-[#B0B0B0]">geral@l3d-labs.pt</div>
                 </div>
               </div>
             </div>

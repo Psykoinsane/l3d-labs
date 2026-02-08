@@ -24,12 +24,12 @@ export default function Header({ scrolled }: HeaderProps) {
       }`}
     >
       <div className="container mx-auto px-6 h-full flex items-center justify-between">
-        {/* Logo */}
+        {/* Logo - Ajustado para o teu ficheiro local e tamanho mobile reduzido */}
         <div className={`flex items-center transition-all duration-500 ${scrolled ? 'opacity-0 pointer-events-none -translate-y-4' : 'opacity-100 translate-y-0'}`}>
           <img 
-            src="https://static.readdy.ai/image/f97c8a6bc1b5a02ffd35f331c7010e2d/3f554b1f9d2932180c7076cbda37c8c1.jpeg" 
+            src="/L3d.svg" 
             alt="L3d Logo" 
-            className="h-8 w-auto sm:h-10 md:h-12"
+            className="h-7 w-auto sm:h-9 md:h-11 transition-all"
           />
         </div>
 
@@ -58,7 +58,7 @@ export default function Header({ scrolled }: HeaderProps) {
           </button>
         </nav>
 
-        {/* CTA Button */}
+        {/* CTA Button Desktop */}
         <button
           onClick={() => scrollToSection('contato')}
           className="hidden md:block bg-[#FFD700] text-black font-bold px-8 py-3 rounded-lg hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(255,215,0,0.4)] hover:shadow-[0_0_30px_rgba(255,215,0,0.6)] whitespace-nowrap cursor-pointer"
@@ -66,42 +66,45 @@ export default function Header({ scrolled }: HeaderProps) {
           Orçamento
         </button>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button - Ajustado para facilitar o clique */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden text-[#FFD700] text-2xl cursor-pointer"
+          className="md:hidden text-[#FFD700] text-3xl cursor-pointer p-2 focus:outline-none"
+          aria-label="Menu"
         >
           <i className={mobileMenuOpen ? 'ri-close-line' : 'ri-menu-line'}></i>
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Otimizado para Contraste e Marca */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-[#0A0A0A] border-t border-[#2A2A2A]">
-          <nav className="flex flex-col p-6 space-y-4">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-[#0A0A0A]/98 border-t border-[#FFD700]/20 backdrop-blur-lg shadow-2xl overflow-hidden">
+          <nav className="flex flex-col p-8 space-y-6">
             <button
               onClick={() => scrollToSection('inicio')}
-              className="text-[#E5E5E5] hover:text-[#FFD700] transition-colors duration-300 font-medium text-left cursor-pointer"
+              className="text-lg text-[#E5E5E5] hover:text-[#FFD700] transition-colors duration-300 font-semibold text-left border-b border-white/5 pb-2 cursor-pointer"
             >
               Início
             </button>
             <button
               onClick={() => scrollToSection('servicos')}
-              className="text-[#E5E5E5] hover:text-[#FFD700] transition-colors duration-300 font-medium text-left cursor-pointer"
+              className="text-lg text-[#E5E5E5] hover:text-[#FFD700] transition-colors duration-300 font-semibold text-left border-b border-white/5 pb-2 cursor-pointer"
             >
               Serviços
             </button>
             <button
               onClick={() => scrollToSection('portfolio')}
-              className="text-[#E5E5E5] hover:text-[#FFD700] transition-colors duration-300 font-medium text-left cursor-pointer"
+              className="text-lg text-[#E5E5E5] hover:text-[#FFD700] transition-colors duration-300 font-semibold text-left border-b border-white/5 pb-2 cursor-pointer"
             >
               Portfólio
             </button>
+            
+            {/* Botão de Orçamento Mobile com destaque */}
             <button
               onClick={() => scrollToSection('contato')}
-              className="bg-[#FFD700] text-black font-bold px-8 py-3 rounded-lg text-center whitespace-nowrap cursor-pointer"
+              className="bg-[#FFD700] text-black font-extrabold px-8 py-4 rounded-xl text-center shadow-[0_5px_20px_rgba(255,215,0,0.3)] active:scale-95 transition-all cursor-pointer"
             >
-              Orçamento
+              PEDIR ORÇAMENTO
             </button>
           </nav>
         </div>

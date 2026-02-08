@@ -1,69 +1,65 @@
-<!doctype html>
-<html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/L3d.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>L3d - Impressão 3D Industrial e Prototipagem Técnica | Precisão Milimétrica</title>
-    <meta name="description" content="L3d oferece serviços de impressão 3D industrial com precisão milimétrica. Prototipagem rápida, produção em série e modelação 3D personalizada. Materiais técnicos de alta qualidade e entrega ágil para projetos de engenharia." />
-    <meta name="keywords" content="impressão 3D, prototipagem rápida, impressão 3D industrial, modelação 3D, produção em série" />
-    <link rel="canonical" href="https://l3d-labs.pt/" />
-    
-    <meta property="og:title" content="L3d - Impressão 3D Industrial e Prototipagem Técnica" />
-    <meta property="og:description" content="Serviços de impressão 3D industrial com precisão milimétrica. Prototipagem rápida, produção em série e modelação 3D personalizada para projetos de engenharia." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://l3d-labs.pt/" />
-    
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="L3d - Impressão 3D Industrial" />
-    <meta name="twitter:description" content="Prototipagem rápida e produção em série com precisão milimétrica" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "L3d Labs",
-      "description": "Impressão 3D Industrial e Prototipagem Técnica em Portugal",
-      "image": "https://l3d-labs.pt/og-image.jpg",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Portugal",
-        "addressCountry": "PT"
-      },
-      "email": "geral@l3d-labs.pt",
-      "url": "https://l3d-labs.pt",
-      "sameAs": [
-        "https://www.instagram.com/l3d_laboratorio3d?igsh=MTAzbGVvdW9oanZ3cw=="
-      ]
-    }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    
-    <script 
-      src="https://readdy.ai/api/public/assistant/widget?projectId=b2b45ba2-1abc-43db-a226-8a3eaeeeabff"
-      mode="hybrid"
-      voice-show-transcript="true"
-      theme="dark"
-      size="compact"
-      accent-color="#FFD700"
-      button-base-color="#1A1A1A"
-      button-accent-color="#FFD700"
-      defer
-    ></script>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-    <script 
-      defer 
-      src='https://static.cloudflareinsights.com/beacon.min.js' 
-      data-cf-beacon='{"token": "bbc8e704e0f1427aaeb6ad7865a10a9c"}'>
-    </script>
-  </body>
-</html>
+/* Variáveis de Cor da Marca L3d */
+:root {
+  --primary: #FFD700;
+  --secondary: #1A1A1A;
+  --bg-dark: #0f0f0f;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Efeito de Gradiente Hero */
+.hero-gradient {
+  background: radial-gradient(circle at center, rgba(255, 215, 0, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Animações Corrigidas com Semicolons */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Estilização de Scrollbar para Browsers Modernos */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}

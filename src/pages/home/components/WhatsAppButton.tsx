@@ -6,7 +6,7 @@ import React from 'react';
  */
 export default function WhatsAppButton() {
   // CONFIGURAÇÃO: Substitui pelo teu número real (mantém o prefixo 351)
-  const phoneNumber = "351910000000"; 
+  const phoneNumber = "351960337597"; 
   const message = "Olá L3d Labs! Gostaria de solicitar um orçamento para impressão 3D.";
   
   // Formata o link para abrir o WhatsApp com a mensagem pré-definida

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Header from './pages/home/components/Header';
 import Hero from './pages/home/components/Hero';
 import Services from './pages/home/components/Services';
-// Removi as linhas que causavam erro (Portfolio e Contact)
 import Footer from './pages/home/components/Footer';
 import WhatsAppButton from './pages/home/components/WhatsAppButton';
 

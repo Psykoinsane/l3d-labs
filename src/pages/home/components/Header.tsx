@@ -29,7 +29,7 @@ export default function Header({ scrolled }: HeaderProps) {
           <img 
             src="https://static.readdy.ai/image/f97c8a6bc1b5a02ffd35f331c7010e2d/3f554b1f9d2932180c7076cbda37c8c1.jpeg" 
             alt="L3d Logo" 
-            className="h-56 w-auto mt-16"
+            className="h-8 w-auto sm:h-10 md:h-12"
           />
         </div>
 

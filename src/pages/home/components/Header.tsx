@@ -87,7 +87,7 @@ export default function Header({ scrolled }: HeaderProps) {
               Início
             </button>
             <button
-              onClick={() => scrollToSection('services')}
+              onClick={() => scrollToSection('servicos')}
               className="text-lg text-[#E5E5E5] hover:text-[#FFD700] transition-colors duration-300 font-semibold text-left border-b border-white/5 pb-2 cursor-pointer"
             >
               Serviços

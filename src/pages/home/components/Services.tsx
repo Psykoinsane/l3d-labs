@@ -33,7 +33,7 @@ export default function Services() {
   ];
 
   const scrollToContact = (serviceTitle: string) => {
-    const contactSection = document.getElementById('contato');
+    const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }

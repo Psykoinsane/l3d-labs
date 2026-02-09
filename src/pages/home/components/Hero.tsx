@@ -34,7 +34,7 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <button
-                onClick={() => scrollToSection('contato')}
+                onClick={() => scrollToSection('contact')}
                 className="bg-[#FFD700] text-black font-bold px-8 py-4 rounded-xl hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(255,215,0,0.4)] hover:shadow-[0_0_40px_rgba(255,215,0,0.6)] whitespace-nowrap cursor-pointer"
               >
                 Solicitar Orçamento

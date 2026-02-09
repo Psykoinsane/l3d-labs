@@ -8,7 +8,7 @@ export default function Features() {
     {
       icon: 'ri-flask-line',
       title: 'Materiais Técnicos',
-      description: 'Ampla variedade de materiais industriais: ABS, PLA, PETG, Nylon, TPU e resinas especializadas.'
+      description: 'Ampla variedade de materiais industriais: ABS, PLA, PETG, Nylon, TPU.'
     },
     {
       icon: 'ri-time-line',

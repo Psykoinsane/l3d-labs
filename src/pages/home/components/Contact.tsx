@@ -9,7 +9,6 @@ export default function Contact() {
 
     const formData = new FormData(e.currentTarget);
     
-    // IMPORTANTE: Substitui este valor pela chave que receberes no email
     formData.append("access_key", "d9a581a0-77cb-47e3-8f0d-3d39d369706a");
 
     try {

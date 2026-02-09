@@ -60,7 +60,7 @@ export default function Header({ scrolled }: HeaderProps) {
 
         {/* CTA Button Desktop */}
         <button
-          onClick={() => scrollToSection('contato')}
+          onClick={() => scrollToSection('contact')}
           className="hidden md:block bg-[#FFD700] text-black font-bold px-8 py-3 rounded-lg hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(255,215,0,0.4)] hover:shadow-[0_0_30px_rgba(255,215,0,0.6)] whitespace-nowrap cursor-pointer"
         >
           Orçamento
@@ -87,7 +87,7 @@ export default function Header({ scrolled }: HeaderProps) {
               Início
             </button>
             <button
-              onClick={() => scrollToSection('servicos')}
+              onClick={() => scrollToSection('services')}
               className="text-lg text-[#E5E5E5] hover:text-[#FFD700] transition-colors duration-300 font-semibold text-left border-b border-white/5 pb-2 cursor-pointer"
             >
               Serviços
@@ -101,7 +101,7 @@ export default function Header({ scrolled }: HeaderProps) {
             
             {/* Botão de Orçamento Mobile com destaque */}
             <button
-              onClick={() => scrollToSection('contato')}
+              onClick={() => scrollToSection('contact')}
               className="bg-[#FFD700] text-black font-extrabold px-8 py-4 rounded-xl text-center shadow-[0_5px_20px_rgba(255,215,0,0.3)] active:scale-95 transition-all cursor-pointer"
             >
               PEDIR ORÇAMENTO

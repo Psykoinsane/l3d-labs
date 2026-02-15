@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://l3d-labs.pt/sitemap.xml

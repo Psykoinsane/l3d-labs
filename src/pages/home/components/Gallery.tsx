@@ -3,9 +3,9 @@ import { useState } from 'react';
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Fundi todas as imagens num único array para o Portefólio
+  // Lista unificada de todas as fotos (Ex-Namorados + Portefólio Geral)
   const allImages = [
-    // Imagens que estavam no Dia dos Namorados
+    // Fotos que estavam na secção Dia dos Namorados
     { url: '/images/DN/1.png', span: '' },
     { url: '/images/DN/2.png', span: '' },
     { url: '/images/DN/3.png', span: '' },
@@ -19,7 +19,7 @@ export default function Gallery() {
     { url: '/images/DN/12.png', span: '' },
     { url: '/images/DN/13.png', span: '' },
     { url: '/images/DN/14.png', span: '' },
-    // Imagens do Portefólio Geral
+    // Fotos do Portefólio de Engenharia/Protótipos
     {
       url: 'https://readdy.ai/api/search-image?query=3d-printed-custom-gift-personalized-decorative-object-on-dark-surface-yellow-gold-highlights-industrial-design-artistic-piece-clean-background-professional-product-photography&width=600&height=800&seq=gallery-001&orientation=portrait',
       span: 'md:row-span-2'
@@ -61,7 +61,7 @@ export default function Gallery() {
           Projetos Realizados
         </h2>
 
-        {/* Galeria Unificada */}
+        {/* Galeria Unificada em Grid */}
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-[250px]">
           {allImages.map((image, index) => (
             <div
@@ -74,7 +74,10 @@ export default function Gallery() {
                 alt={`Projeto L3D Labs ${index + 1}`}
                 className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
               />
+              {/* Overlay Dourado ao passar o rato */}
               <div className="absolute inset-0 bg-[#FFD700]/0 group-hover:bg-[#FFD700]/10 transition-all duration-500"></div>
+              
+              {/* Ícone de Zoom */}
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <i className="ri-zoom-in-line text-white text-4xl drop-shadow-lg"></i>
               </div>
@@ -83,7 +86,7 @@ export default function Gallery() {
         </div>
       </div>
 
-      {/* Lightbox Modal */}
+      {/* Modal de Visualização (Lightbox) */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
